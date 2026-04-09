@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCT Auction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DCT Auction</h1>
+    </header>
+
+    <main>
+        <section id="add-lot">
+            <h2>Добавить лот</h2>
+            <input type="text" id="lot-name" placeholder="Название лота">
+            <input type="number" id="lot-price" placeholder="Начальная цена">
+            <input type="text" id="lot-img" placeholder="Ссылка на фото">
+            <button onclick="addLot()">Добавить</button>
+        </section>
+
+        <section id="lots">
+            <h2>Лоты</h2>
+            <div id="lot-list" class="lot-container"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
